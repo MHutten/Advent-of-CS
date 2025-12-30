@@ -28,6 +28,14 @@ namespace advent_of_code.testing {
 
         }
 
+        public static void assert_equal(string first, string second) {
+
+            if (!first.Equals(second)) {
+                throw new TestFailure(first + " != " + second);
+            }
+
+        }
+
     }
 
 }
